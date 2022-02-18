@@ -1,12 +1,14 @@
-import CounterWithButton from "../componets/CounterWithButton";
-import Counter from "../componets/Counter";
+import CounterButton from "../componets/CounterButton";
+import Counter from "../componets/CounterButton";
+import CounterWrapper from "../componets/CounterWrapper";
 
 const Threech = () => {
   return (
     <>
-      <h1>Three</h1>
-      <CounterWithButton></CounterWithButton>
+      <h1>Three Chalanges</h1>
+      <CounterButton></CounterButton>
       <Counter></Counter>
+      <CounterWrapper></CounterWrapper>
     </>
   );
 };

@@ -1,11 +1,6 @@
-import Button from "./Button";
+import classes from "./Counter.module.css";
 
-const Counter = () => {
-  return (
-    <div>
-      <div className="counter"></div>
-      <Button name="Context Button"></Button>
-    </div>
-  );
+const Counter = (props) => {
+  return <div className={classes.counter}>{props.count}</div>;
 };
 export default Counter;

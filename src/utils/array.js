@@ -31,7 +31,13 @@ export const difference = (checkArr, values) => {
   return result;
 };
 
-export const flatten = (array) => {
-  const result = [];
+export const flatten = (array, result = []) => {
+  for (let item in array) {
+    if (Array.isArray(array[item])) {
+      flatten(array[item], result);
+    } else {
+      result.push(array[item]);
+    }
+  }
   return result;
 };

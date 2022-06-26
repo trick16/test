@@ -30,3 +30,8 @@ export const difference = (checkArr, values) => {
   }
   return result;
 };
+
+export const flatten = (array) => {
+  const result = [];
+  return result;
+};

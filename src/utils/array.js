@@ -41,3 +41,12 @@ export const flatten = (array, result = []) => {
   }
   return result;
 };
+export const fromPairs = (array) => {
+  // return Object.fromEntries(array);
+  let result = {};
+  for (let i in array) {
+    let item = array[i];
+    result[item[0]] = item[1];
+  }
+  return result;
+};

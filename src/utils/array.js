@@ -50,3 +50,7 @@ export const fromPairs = (array) => {
   }
   return result;
 };
+export const drop = (array, number = 1) => {
+  return array.slice(number);
+  // return array.filter((item) => item > number);
+};
